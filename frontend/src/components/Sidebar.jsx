@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
-import { FaHome, FaHeart, FaFire, FaFilm, FaTv } from 'react-icons/fa';
+import { FaHome, FaHeart, FaFire, FaFilm, FaTv, FaSun, FaMoon } from 'react-icons/fa';
 import '../css/Sidebar.css';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Sidebar() {
+    const { isDark, toggleTheme } = useTheme();
+
     return (
         <div className="sidebar">
             <div className="sidebar-header">
@@ -36,6 +39,13 @@ function Sidebar() {
                     <FaTv className="icon" />
                     <span>TV Shows</span>
                 </Link>
+            </div>
+
+            <div className="sidebar-footer">
+                <button className="theme-toggle" onClick={toggleTheme}>
+                    {isDark ? <FaSun className="icon" /> : <FaMoon className="icon" />}
+                    <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
+                </button>
             </div>
         </div>
     )
