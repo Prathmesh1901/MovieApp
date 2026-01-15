@@ -10,7 +10,6 @@ import MovieDetails from "./pages/MovieDetails";
 import { Routes, Route } from "react-router-dom"
 import { MovieProvider } from "./contexts/MovieContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import NavBar from "./components/NavBar";
 function App() {
   const isMobile = window.innerWidth < 768; // Simple check, better to use media queries/hook
 
@@ -20,7 +19,6 @@ function App() {
         <div className="app-container">
           <Sidebar />
           <div className="content-wrapper">
-            <NavBar />
             <main className="main-content">
               <Routes>
                 <Route path="/" element={<Home />} />
