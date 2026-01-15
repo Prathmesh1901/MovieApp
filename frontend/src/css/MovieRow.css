@@ -1,0 +1,37 @@
+.movie-row-section {
+    margin-bottom: 4rem;
+}
+
+.movie-row-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    padding-left: 15px;
+    border-left: 5px solid #e50914;
+    /* Netflix red to match hero button */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.movie-row-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.movie-row-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.movie-row-item {
+    flex: 0 0 auto;
+    width: 250px;
+    /* Adjust based on card size */
+}

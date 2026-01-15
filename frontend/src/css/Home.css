@@ -1,0 +1,136 @@
+.home {
+  /* padding: 20px; Removed padding to let hero bleed to edges ideally, but container has padding */
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: 2px solid #646cff;
+}
+
+.search-button {
+  background-color: #646cff;
+  /* Primary color */
+  color: white;
+}
+
+.search-button:hover {
+  background-color: #535bf2;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.error-message {
+  text-align: center;
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+/* HERO SECTION CSS */
+.hero-section {
+  height: 500px;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.hero-overview {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background-color: #e50914;
+  /* Netflix red-ish or primary color */
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}

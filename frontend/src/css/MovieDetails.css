@@ -1,0 +1,144 @@
+.movie-details-container {
+    width: 100%;
+    color: white;
+}
+
+.details-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.details-content {
+    display: flex;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 10;
+    align-items: flex-start;
+}
+
+.details-poster {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.details-info {
+    flex: 1;
+}
+
+.details-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.details-tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.details-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+}
+
+.rating {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.details-genres {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.genre-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #eee;
+}
+
+.details-overview {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+/* Cast Section */
+.cast-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.cast-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #646cff #333;
+}
+
+.cast-card {
+    min-width: 140px;
+    text-align: center;
+}
+
+.cast-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+}
+
+.cast-name {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.cast-character {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .details-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details-poster {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .details-meta,
+    .details-genres {
+        justify-content: center;
+    }
+}
